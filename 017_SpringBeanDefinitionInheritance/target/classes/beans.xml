@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="selam" class="com.vesg.springframework.Selam">
+		<property name="mesaj1" value="Mesaj1" />
+		<property name="mesaj2" value="Mesaj2" />
+	</bean>
+	<bean id="yazar" class="com.vesg.springframework.Yazar" parent="selam">
+		<property name="mesaj1" value="Y-Mesaj1" />
+		<property name="mesaj3" value="Y-Mesaj3" />
+	</bean>
+</beans>
+ 
